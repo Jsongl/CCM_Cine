@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{129F537F-F5DB-4770-B341-1EF8D02AEC8E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CCM_Cine</RootNamespace>
+    <AssemblyName>CCM_Cine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boletos.cs" />
+    <Compile Include="Form_Cartelera1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Cartelera1.Designer.cs">
+      <DependentUpon>Form_Cartelera1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Cartelera2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Cartelera2.Designer.cs">
+      <DependentUpon>Form_Cartelera2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Cartelera3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Cartelera3.Designer.cs">
+      <DependentUpon>Form_Cartelera3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Estadisticas.Designer.cs">
+      <DependentUpon>Form_Estadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Horarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Horarios.Designer.cs">
+      <DependentUpon>Form_Horarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Imprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Imprimir.Designer.cs">
+      <DependentUpon>Form_Imprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Logeo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Logeo.Designer.cs">
+      <DependentUpon>Form_Logeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Peliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Peliculas.Designer.cs">
+      <DependentUpon>Form_Peliculas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Salas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Salas.Designer.cs">
+      <DependentUpon>Form_Salas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Usuarios.Designer.cs">
+      <DependentUpon>Form_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Venta.Designer.cs">
+      <DependentUpon>Form_Venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Horarios.cs" />
+    <Compile Include="Listado_Horarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado_Horarios.Designer.cs">
+      <DependentUpon>Listado_Horarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listado_Peliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado_Peliculas.Designer.cs">
+      <DependentUpon>Listado_Peliculas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listado_Salas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado_Salas.Designer.cs">
+      <DependentUpon>Listado_Salas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listado_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado_Usuarios.Designer.cs">
+      <DependentUpon>Listado_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_boletos.cs" />
+    <Compile Include="Lista_horarios.cs" />
+    <Compile Include="Lista_peliculas.cs" />
+    <Compile Include="Lista_salas.cs" />
+    <Compile Include="Lista_usuarios.cs" />
+    <Compile Include="Peliculas.cs" />
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salas.cs" />
+    <Compile Include="Usuarios.cs" />
+    <EmbeddedResource Include="Form_Cartelera1.resx">
+      <DependentUpon>Form_Cartelera1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Cartelera2.resx">
+      <DependentUpon>Form_Cartelera2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Cartelera3.resx">
+      <DependentUpon>Form_Cartelera3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Estadisticas.resx">
+      <DependentUpon>Form_Estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Horarios.resx">
+      <DependentUpon>Form_Horarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Imprimir.resx">
+      <DependentUpon>Form_Imprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Logeo.resx">
+      <DependentUpon>Form_Logeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Peliculas.resx">
+      <DependentUpon>Form_Peliculas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Salas.resx">
+      <DependentUpon>Form_Salas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Usuarios.resx">
+      <DependentUpon>Form_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Venta.resx">
+      <DependentUpon>Form_Venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Horarios.resx">
+      <DependentUpon>Listado_Horarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Peliculas.resx">
+      <DependentUpon>Listado_Peliculas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Salas.resx">
+      <DependentUpon>Listado_Salas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Usuarios.resx">
+      <DependentUpon>Listado_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\butaca.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
